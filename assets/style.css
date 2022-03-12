@@ -1,0 +1,29 @@
+/* color variables for easier to remember names */
+:root {
+    --primary: #233d8c;
+    --secondary: #000000;
+    --pop: #0127ff;
+}
+
+/* remove default CSS styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general body styling setting */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+/* header styling start */
+header {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
