@@ -23,10 +23,12 @@ body {
 /* header styling start */
 header {
     background-color: var(--secondary);
-    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px 30px;
+    position: -webkit-sticky;
+    position: sticky;
+    display: flex;
 }
 
 
@@ -35,6 +37,11 @@ header h1 {
     font-size: 36px;
     font-weight: bold;
     margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--pop);
 }
 
 header nav {
@@ -53,7 +60,7 @@ header nav ul li {
     padding: 10px;
     font-size: 22px;
     margin: 0 30px;
-    font-weight: lighter;
+    font-weight: bold;
     text-decoration: none;
     color: var(--pop);
     padding-bottom: 2px;
@@ -133,7 +140,7 @@ main {
 }
 
 .main p {
-    color: var(--primary);
+    color: var(--pop);
     font-size: 30px;
     margin-bottom: 22px;
 }
@@ -192,7 +199,7 @@ main {
 }
 /* end of portfolio images */
 
-.flex contact address {
+.contact address {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -203,6 +210,7 @@ main {
 .contact address a {
     text-decoration: none;
     color: var(--pop);
+    font-weight: bold;
     display: inline-block;
     font-size: 15px;
     font-style: normal;
@@ -215,3 +223,17 @@ main {
     border-radius: 15px;
 }
 
+footer {
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--primary);
+}
+
+footer h2 {
+    color: var(--secondary);
+    font-size: 26px;
+    margin: 0;
+}
